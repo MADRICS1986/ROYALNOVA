@@ -1,0 +1,11 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+optimizer = true
+optimizer_runs = 200
+gas_reports = ["RoyalnovaToken"]
+
+[etherscan]
+ethereum = { key = "Z231DA6TIFXWWGFKH3M8GN7TJ46KQQ3YHF" }
+

@@ -1,0 +1,6 @@
+[submodule "Royalnova/lib/forge-std"]
+	path = Royalnova/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Royalnova/lib/openzeppelin-contracts"]
+	path = Royalnova/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
