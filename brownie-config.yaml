@@ -1,0 +1,10 @@
+compiler:
+    solc:
+        version: 0.8.28
+        optimizer:
+            enabled: true
+            runs: 200
+        evm_version: istanbul
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.9.3
+
