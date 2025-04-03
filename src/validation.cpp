@@ -1939,14 +1939,17 @@ PackageMempoolAcceptResult ProcessNewPackage(Chainstate& active_chainstate, CTxM
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-    // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return 0;
+    const int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
 
-    CAmount nSubsidy = 50 * COIN;
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
+    if (halvings >= 64) { 
+        return 0; // No more block rewards after 64 halvings
+    }
+
+    CAmount nSubsidy = 50 * COIN; // Initial block reward
+
+    // Apply halving logic
     nSubsidy >>= halvings;
+
     return nSubsidy;
 }
 
