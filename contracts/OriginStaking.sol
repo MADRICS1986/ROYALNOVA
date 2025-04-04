@@ -67,8 +67,8 @@ contract OriginStaking is Ownable {
 
     // ✅ Getter function for external stake access
     function getStake(address staker) external view returns (uint256 amount, uint256 startTime) {
-        Stake memory stake = stakes[staker];
-        return (stake.amount, stake.startTime);
+        Stake memory userStake = stakes[staker];
+        return (userStake.amount, userStake.startTime);
     }
 }
 

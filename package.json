@@ -1,6 +1,42 @@
 {
   "dependencies": {
-    "@openzeppelin/contracts": "^5.2.0",
-    "ethers": "^5.8.0"
-  }
+    "@openzeppelin/contracts": "^4.9.5"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@typechain/ethers-v6": "^0.4.3",
+    "@typechain/hardhat": "^8.0.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.14.0",
+    "chai": "^4.5.0",
+    "ethers": "^6.13.5",
+    "hardhat": "^2.22.19",
+    "hardhat-gas-reporter": "^1.0.10",
+    "solidity-coverage": "^0.8.14",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.8.2"
+  },
+  "name": "royalnova",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MADRICS1986/Royalnova.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MADRICS1986/Royalnova/issues"
+  },
+  "homepage": "https://github.com/MADRICS1986/Royalnova#readme"
 }
